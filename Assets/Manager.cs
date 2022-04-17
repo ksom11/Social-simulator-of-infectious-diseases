@@ -52,6 +52,7 @@ public class Manager : MonoBehaviour
         infnum.text = Data.infledNum.ToString();
         bronum.text = Data.brokenNum.ToString();
         dednum.text = Data.deadNum.ToString();
+        if(Data.TotalMoney!=0)
         moneynum.text = Data.TotalMoney.ToString();
     }
 }

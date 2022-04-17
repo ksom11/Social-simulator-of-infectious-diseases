@@ -39,6 +39,7 @@ public class Person : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         
         if(!dead)
         {
@@ -76,7 +77,7 @@ public class Person : MonoBehaviour
                 pmove(this.gameObject);
             }
 
-
+            
             if (!isolated)
             {
                 if (getinf(this.gameObject))
@@ -87,7 +88,7 @@ public class Person : MonoBehaviour
 
                 }
             }
-
+            
 
             if (!isolated)
             {
@@ -96,20 +97,21 @@ public class Person : MonoBehaviour
 
 
             costmoney();
-            randdead();
+            randdead(this);
         }
 
         
 
     }
 
-    void randdead()
+    void randdead(Person P)
     {
         if(infected)
         {
             if(UnityEngine.Random.Range(0,10000)==50)
             {
                 dead = true;
+                Data.persons.Remove(P);
                 Data.deadNum++;
             }
         }
@@ -203,27 +205,33 @@ public class Person : MonoBehaviour
         //GameObject[] all = { };
         //var all = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
         //all.Initialize();
+        var p = person.GetComponent<Person>();
         foreach (var item in Data.persons)
         {
-            
-            if(item.name.Contains("Cube (")&&item.name!=person.name)
+            //item.name.Contains("Cube (")&&
+            if (item!=person)
             {
-
-                if (person.GetComponent<Person>().dead == false && item.GetComponent<Person>().dead == false)
+                
+                var i = item.GetComponent<Person>();
+                if (p.dead == false && i.dead == false)
                 {
+                    /*
                     var v = person.transform.position;
                     var vv = item.transform.position;
                     var des = vv - v;
-                    if (magnitude(des) < infectdes)
+                    */
+                    //person.transform.position- item.transform.position
+                    if ((person.transform.position - item.transform.position).sqrMagnitude < infectdes)
                     {
                         //Debug.Log("des:" + magnitude(des));
                         //Debug.Log(person.name + " : " + item.name);
-                        if (person.GetComponent<Person>().infected == true || item.GetComponent<Person>().infected == true)
+                        if (p.infected == true || i.infected == true)
                         {
                             return true;
                         }
 
                     }
+                    
                 }
                 
                 
@@ -231,15 +239,20 @@ public class Person : MonoBehaviour
         }
         return false;
     }
-
+    
     public float magnitude(Vector3 v)
     {
-        
-            //自身各分量平方运算.
-            float X = v.x * v.x;
-            float Y = v.y * v.y;
-            float Z = v.z * v.z;
-            return Mathf.Sqrt(X + Y + Z);//开根号,最终返回向量的长度/模/大小.
+
+        //自身各分量平方运算.
+        /*
+        float X = v.x * v.x;
+        float Y = v.y * v.y;
+        float Z = v.z * v.z;
+        */
+        //return v.x;
+        //return v.x + v.y + v.z;
+        return v.sqrMagnitude;
+            //return Mathf.Sqrt(X + Y + Z);//开根号,最终返回向量的长度/模/大小.
         
 
     }
