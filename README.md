@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/ksom11/Social-simulator-of-infectious-diseases/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-30%20105000.png">
+  <img src="https://github.com/ksom11/Social-simulator-of-infectious-diseases/blob/main/Screenshot.png">
 </div>
 
 模拟在传染病大流行时，社会层面变化。当然本项目更聚焦于每个普通人的影响，不仅是得病、隔离、病死、回复，也包括每日收入、花费的模拟，每个人都可能破产。这些众多的细节能更好的呈现出疫情流行的社会是如何的。
