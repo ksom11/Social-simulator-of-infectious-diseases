@@ -6,6 +6,9 @@
 
 Simulate the change of social level during the epidemic of infectious diseases. Of course, this project focuses more on the impact of every ordinary person, not only the illness, isolation, death and recovery, but also the simulation of daily income and expenditure. Everyone may go bankrupt. These numerous details can better show how the epidemic society is.
 
+License
+-------
+
 The MIT License (MIT)
 Copyright © 2022 ksom11 
 
