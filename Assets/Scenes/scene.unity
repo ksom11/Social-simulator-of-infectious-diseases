@@ -179,7 +179,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &3241335
 BoxCollider:
@@ -243,6 +242,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3241332}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &13857055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13857056}
+  - component: {fileID: 13857057}
+  m_Layer: 5
+  m_Name: Slider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &13857056
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13857055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2133906170}
+  - {fileID: 2083184343}
+  - {fileID: 50870182}
+  - {fileID: 200123181}
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -393.9, y: -276.3}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &13857057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13857055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1123725305}
+  m_FillRect: {fileID: 194337657}
+  m_HandleRect: {fileID: 1123725304}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0.5
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &15808333
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +389,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &15808336
 BoxCollider:
@@ -419,7 +508,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &15840759
 BoxCollider:
@@ -539,7 +627,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &26269854
 BoxCollider:
@@ -659,7 +746,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &29737564
 BoxCollider:
@@ -779,7 +865,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &32835566
 BoxCollider:
@@ -899,7 +984,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &41252672
 BoxCollider:
@@ -963,6 +1047,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41252669}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &50870181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50870182}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &50870182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50870181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1123725304}
+  m_Father: {fileID: 13857056}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &51877808
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +1113,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1098,7 +1218,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &56124684
 BoxCollider:
@@ -1218,7 +1337,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &60488590
 BoxCollider:
@@ -1338,7 +1456,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &65533507
 BoxCollider:
@@ -1402,6 +1519,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65533504}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &70450174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70450175}
+  - component: {fileID: 70450177}
+  - component: {fileID: 70450176}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &70450175
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70450174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188955621}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160.9, y: -6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &70450176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70450174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u4F20\u67D3\u8DDD\u79BB"
+--- !u!222 &70450177
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70450174}
+  m_CullTransparentMesh: 1
 --- !u!1 &71567860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1654,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &71567863
 BoxCollider:
@@ -1578,7 +1773,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &75274992
 BoxCollider:
@@ -1698,7 +1892,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &77023747
 BoxCollider:
@@ -1818,7 +2011,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &77098950
 BoxCollider:
@@ -1938,7 +2130,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &89300147
 BoxCollider:
@@ -2058,7 +2249,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &98517380
 BoxCollider:
@@ -2152,7 +2342,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2231,7 +2421,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2336,7 +2526,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &105605197
 BoxCollider:
@@ -2456,7 +2645,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &112673287
 BoxCollider:
@@ -2576,7 +2764,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &122973005
 BoxCollider:
@@ -2696,7 +2883,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &123795355
 BoxCollider:
@@ -2816,7 +3002,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &127576922
 BoxCollider:
@@ -2922,7 +3107,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &133549146
 BoxCollider:
@@ -3056,7 +3240,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &133990505
 BoxCollider:
@@ -3176,7 +3359,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &139656831
 BoxCollider:
@@ -3296,7 +3478,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &154036680
 BoxCollider:
@@ -3416,7 +3597,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &154645838
 BoxCollider:
@@ -3480,6 +3660,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154645835}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &154895285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154895286}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &154895286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154895285}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 398558965}
+  m_Father: {fileID: 1556116025}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &167302497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,7 +3752,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &167302500
 BoxCollider:
@@ -3656,7 +3871,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &180293037
 BoxCollider:
@@ -3776,7 +3990,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &185093869
 BoxCollider:
@@ -3896,7 +4109,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &192851932
 BoxCollider:
@@ -3960,6 +4172,160 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192851929}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &194337656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194337657}
+  - component: {fileID: 194337659}
+  - component: {fileID: 194337658}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &194337657
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194337656}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2083184343}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &194337658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194337656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &194337659
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194337656}
+  m_CullTransparentMesh: 1
+--- !u!1 &200123180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200123181}
+  - component: {fileID: 200123183}
+  - component: {fileID: 200123182}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &200123181
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200123180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 13857056}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160.9, y: -6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &200123182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200123180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u82B1\u9500\u7CFB\u6570"
+--- !u!222 &200123183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200123180}
+  m_CullTransparentMesh: 1
 --- !u!1 &201177139
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,7 +4382,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &201177142
 BoxCollider:
@@ -4136,7 +4501,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &203833142
 BoxCollider:
@@ -4256,7 +4620,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &214880987
 BoxCollider:
@@ -4376,7 +4739,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &226226885
 BoxCollider:
@@ -4496,7 +4858,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &226814729
 BoxCollider:
@@ -4616,7 +4977,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &228074531
 BoxCollider:
@@ -4736,7 +5096,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &228231541
 BoxCollider:
@@ -4856,7 +5215,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &230349954
 BoxCollider:
@@ -4976,7 +5334,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &232561584
 BoxCollider:
@@ -5096,7 +5453,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &234317609
 BoxCollider:
@@ -5216,7 +5572,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &235234937
 BoxCollider:
@@ -5336,7 +5691,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &238296716
 BoxCollider:
@@ -5456,7 +5810,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &244908827
 BoxCollider:
@@ -5576,7 +5929,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &252263032
 BoxCollider:
@@ -5696,7 +6048,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &252943752
 BoxCollider:
@@ -5816,7 +6167,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &255787931
 BoxCollider:
@@ -5936,7 +6286,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &259431665
 BoxCollider:
@@ -6056,7 +6405,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &268608425
 BoxCollider:
@@ -6120,6 +6468,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268608422}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &284166497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284166498}
+  - component: {fileID: 284166500}
+  - component: {fileID: 284166499}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &284166498
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284166497}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1953890426}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &284166499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284166497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &284166500
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284166497}
+  m_CullTransparentMesh: 1
 --- !u!1 &287457886
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,7 +6599,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &287457889
 BoxCollider:
@@ -6240,6 +6662,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287457886}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &287565437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287565438}
+  - component: {fileID: 287565440}
+  - component: {fileID: 287565439}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &287565438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287565437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1556116025}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &287565439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287565437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &287565440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287565437}
+  m_CullTransparentMesh: 1
 --- !u!1 &293083653
 GameObject:
   m_ObjectHideFlags: 0
@@ -6296,7 +6793,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &293083656
 BoxCollider:
@@ -6416,7 +6912,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &301475195
 BoxCollider:
@@ -6536,7 +7031,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &302873397
 BoxCollider:
@@ -6629,7 +7123,7 @@ Transform:
   m_Children:
   - {fileID: 1585415980}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &310046754
 GameObject:
@@ -6687,7 +7181,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &310046757
 BoxCollider:
@@ -6751,6 +7244,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310046754}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &321902605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321902606}
+  - component: {fileID: 321902607}
+  m_Layer: 5
+  m_Name: Slider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &321902606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321902605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1032904358}
+  - {fileID: 832439768}
+  - {fileID: 1289686302}
+  - {fileID: 1603462635}
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -393.9, y: -298.2}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &321902607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321902605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1078262725}
+  m_FillRect: {fileID: 1372415072}
+  m_HandleRect: {fileID: 1078262724}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0.5
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &323200798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,7 +7391,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &323200801
 BoxCollider:
@@ -6927,7 +7510,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &347189204
 BoxCollider:
@@ -7047,7 +7629,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &363318520
 BoxCollider:
@@ -7167,7 +7748,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &363354229
 BoxCollider:
@@ -7287,7 +7867,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &367086811
 BoxCollider:
@@ -7407,7 +7986,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &376105375
 BoxCollider:
@@ -7527,7 +8105,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &380934877
 BoxCollider:
@@ -7591,6 +8168,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380934874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &381766351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381766352}
+  - component: {fileID: 381766354}
+  - component: {fileID: 381766353}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &381766352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381766351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188955621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &381766353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381766351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &381766354
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381766351}
+  m_CullTransparentMesh: 1
 --- !u!1 &386131890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7647,7 +8299,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &386131893
 BoxCollider:
@@ -7767,7 +8418,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &387960798
 BoxCollider:
@@ -7887,7 +8537,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &390607784
 BoxCollider:
@@ -8007,7 +8656,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &396865105
 BoxCollider:
@@ -8071,6 +8719,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396865102}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &398558964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398558965}
+  - component: {fileID: 398558967}
+  - component: {fileID: 398558966}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &398558965
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398558964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 154895286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &398558966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398558964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &398558967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398558964}
+  m_CullTransparentMesh: 1
 --- !u!1 &401020787
 GameObject:
   m_ObjectHideFlags: 0
@@ -8127,7 +8850,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &401020790
 BoxCollider:
@@ -8247,7 +8969,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &408115104
 BoxCollider:
@@ -8367,7 +9088,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &408538373
 BoxCollider:
@@ -8487,7 +9207,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &412172438
 BoxCollider:
@@ -8607,7 +9326,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &427230955
 BoxCollider:
@@ -8764,7 +9482,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431840657
 GameObject:
@@ -8822,7 +9540,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &431840660
 BoxCollider:
@@ -8942,7 +9659,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &433568548
 BoxCollider:
@@ -9062,7 +9778,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &434546221
 BoxCollider:
@@ -9182,7 +9897,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &441739461
 BoxCollider:
@@ -9302,7 +10016,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &446141315
 BoxCollider:
@@ -9366,6 +10079,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446141312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &449572287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 449572288}
+  - component: {fileID: 449572290}
+  - component: {fileID: 449572289}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &449572288
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449572287}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1681713909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &449572289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449572287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &449572290
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449572287}
+  m_CullTransparentMesh: 1
 --- !u!1 &470847915
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,7 +10210,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &470847918
 BoxCollider:
@@ -9542,7 +10329,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &475022050
 BoxCollider:
@@ -9648,7 +10434,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &478138373
 BoxCollider:
@@ -9782,7 +10567,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &484651188
 BoxCollider:
@@ -9902,7 +10686,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &488354814
 BoxCollider:
@@ -10022,7 +10805,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &489380083
 BoxCollider:
@@ -10142,7 +10924,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &498003393
 BoxCollider:
@@ -10262,7 +11043,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &500841581
 BoxCollider:
@@ -10382,7 +11162,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &501542707
 BoxCollider:
@@ -10502,7 +11281,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &503744314
 BoxCollider:
@@ -10622,7 +11400,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &505122203
 BoxCollider:
@@ -10742,7 +11519,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &509120281
 BoxCollider:
@@ -10862,7 +11638,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &514418555
 BoxCollider:
@@ -10982,7 +11757,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &515817711
 BoxCollider:
@@ -11102,7 +11876,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &521550933
 BoxCollider:
@@ -11257,7 +12030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &524843129
 GameObject:
@@ -11315,7 +12088,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &524843132
 BoxCollider:
@@ -11435,7 +12207,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &528765023
 BoxCollider:
@@ -11555,7 +12326,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &533152421
 BoxCollider:
@@ -11675,7 +12445,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &544213848
 BoxCollider:
@@ -11795,7 +12564,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &549650918
 BoxCollider:
@@ -11915,7 +12683,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &556286434
 BoxCollider:
@@ -12035,7 +12802,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &559298715
 BoxCollider:
@@ -12155,7 +12921,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &571747214
 BoxCollider:
@@ -12275,7 +13040,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &575345138
 BoxCollider:
@@ -12395,7 +13159,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &580144482
 BoxCollider:
@@ -12515,7 +13278,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &585796951
 BoxCollider:
@@ -12635,7 +13397,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &590382523
 BoxCollider:
@@ -12755,7 +13516,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &592286006
 BoxCollider:
@@ -12875,7 +13635,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &603706019
 BoxCollider:
@@ -12995,7 +13754,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &612086128
 BoxCollider:
@@ -13115,7 +13873,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &615073071
 BoxCollider:
@@ -13235,7 +13992,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &616160738
 BoxCollider:
@@ -13355,7 +14111,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &618608457
 BoxCollider:
@@ -13475,7 +14230,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &620694986
 BoxCollider:
@@ -13595,7 +14349,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &622386864
 BoxCollider:
@@ -13715,7 +14468,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &626786861
 BoxCollider:
@@ -13835,7 +14587,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &628617428
 BoxCollider:
@@ -13955,7 +14706,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &634925474
 BoxCollider:
@@ -14075,7 +14825,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &642874965
 BoxCollider:
@@ -14195,7 +14944,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &643907597
 BoxCollider:
@@ -14315,7 +15063,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &644847219
 BoxCollider:
@@ -14435,7 +15182,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &654331115
 BoxCollider:
@@ -14541,7 +15287,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &666649228
 BoxCollider:
@@ -14675,7 +15420,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &676652971
 BoxCollider:
@@ -14795,7 +15539,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &679175339
 BoxCollider:
@@ -14915,7 +15658,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &681295861
 BoxCollider:
@@ -15035,7 +15777,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &686771042
 BoxCollider:
@@ -15155,7 +15896,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &687057981
 BoxCollider:
@@ -15275,7 +16015,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &689022777
 BoxCollider:
@@ -15395,7 +16134,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &689306250
 BoxCollider:
@@ -15515,7 +16253,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &691715682
 BoxCollider:
@@ -15635,7 +16372,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &696698912
 BoxCollider:
@@ -15755,7 +16491,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &711419034
 BoxCollider:
@@ -15875,7 +16610,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &725592493
 BoxCollider:
@@ -15995,7 +16729,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &727903286
 BoxCollider:
@@ -16115,7 +16848,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &743574393
 BoxCollider:
@@ -16235,7 +16967,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &744749372
 BoxCollider:
@@ -16355,7 +17086,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &746962981
 BoxCollider:
@@ -16461,7 +17191,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &748861913
 BoxCollider:
@@ -16595,7 +17324,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &750683910
 BoxCollider:
@@ -16715,7 +17443,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &753121298
 BoxCollider:
@@ -16835,7 +17562,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &760574049
 BoxCollider:
@@ -16955,7 +17681,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &762857129
 BoxCollider:
@@ -17075,7 +17800,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &764542170
 BoxCollider:
@@ -17181,7 +17905,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &775458098
 BoxCollider:
@@ -17315,7 +18038,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &779534271
 BoxCollider:
@@ -17435,7 +18157,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &782309003
 BoxCollider:
@@ -17555,7 +18276,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &794967497
 BoxCollider:
@@ -17675,7 +18395,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &797586774
 BoxCollider:
@@ -17795,7 +18514,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &798190798
 BoxCollider:
@@ -17915,7 +18633,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &800876300
 BoxCollider:
@@ -18035,7 +18752,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &801546070
 BoxCollider:
@@ -18155,7 +18871,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &802728846
 BoxCollider:
@@ -18275,7 +18990,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &811523502
 BoxCollider:
@@ -18369,7 +19083,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18409,7 +19123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "totalmon\uFF1A"
+  m_Text: "\u7ECF\u6D4E\u603B\u91CF\uFF1A"
 --- !u!222 &812277530
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18474,7 +19188,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &814990791
 BoxCollider:
@@ -18594,7 +19307,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &829971029
 BoxCollider:
@@ -18714,7 +19426,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &830656491
 BoxCollider:
@@ -18834,7 +19545,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &831931752
 BoxCollider:
@@ -18954,7 +19664,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &832048588
 BoxCollider:
@@ -19018,6 +19727,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832048585}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &832439767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832439768}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &832439768
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832439767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1372415072}
+  m_Father: {fileID: 321902606}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &840813267
 GameObject:
   m_ObjectHideFlags: 0
@@ -19048,7 +19793,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19153,7 +19898,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &842837227
 BoxCollider:
@@ -19273,7 +20017,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &848699678
 BoxCollider:
@@ -19393,7 +20136,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &852585910
 BoxCollider:
@@ -19513,7 +20255,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &855641923
 BoxCollider:
@@ -19633,7 +20374,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &868428151
 BoxCollider:
@@ -19753,7 +20493,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &873890635
 BoxCollider:
@@ -19873,7 +20612,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &877452588
 BoxCollider:
@@ -19993,7 +20731,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &903313411
 BoxCollider:
@@ -20113,7 +20850,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &936043688
 BoxCollider:
@@ -20233,7 +20969,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &937979678
 BoxCollider:
@@ -20353,7 +21088,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &944538980
 BoxCollider:
@@ -20473,7 +21207,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &947669556
 BoxCollider:
@@ -20593,7 +21326,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &950551652
 BoxCollider:
@@ -20657,6 +21389,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950551649}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &953382348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953382349}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &953382349
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953382348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1187655802}
+  m_Father: {fileID: 1188955621}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963612764
 GameObject:
   m_ObjectHideFlags: 0
@@ -20713,7 +21481,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &963612767
 BoxCollider:
@@ -20833,7 +21600,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &967041508
 BoxCollider:
@@ -20953,7 +21719,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &971268326
 BoxCollider:
@@ -21073,7 +21838,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &977763063
 BoxCollider:
@@ -21193,7 +21957,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &986795362
 BoxCollider:
@@ -21313,7 +22076,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &987579672
 BoxCollider:
@@ -21433,7 +22195,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &993377880
 BoxCollider:
@@ -21553,7 +22314,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1018578748
 BoxCollider:
@@ -21673,7 +22433,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1018905290
 BoxCollider:
@@ -21793,7 +22552,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1023355384
 BoxCollider:
@@ -21913,7 +22671,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1027891568
 BoxCollider:
@@ -21977,6 +22734,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027891565}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1032904357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032904358}
+  - component: {fileID: 1032904360}
+  - component: {fileID: 1032904359}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032904358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032904357}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 321902606}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1032904359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032904357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1032904360
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032904357}
+  m_CullTransparentMesh: 1
 --- !u!1 &1035498113
 GameObject:
   m_ObjectHideFlags: 0
@@ -22033,7 +22865,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1035498116
 BoxCollider:
@@ -22153,7 +22984,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1040759545
 BoxCollider:
@@ -22273,7 +23103,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1041594826
 BoxCollider:
@@ -22393,7 +23222,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1048452252
 BoxCollider:
@@ -22513,7 +23341,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1062156971
 BoxCollider:
@@ -22577,6 +23404,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062156968}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1078262723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078262724}
+  - component: {fileID: 1078262726}
+  - component: {fileID: 1078262725}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1078262724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078262723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1289686302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1078262725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078262723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1078262726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078262723}
+  m_CullTransparentMesh: 1
 --- !u!1 &1079783862
 GameObject:
   m_ObjectHideFlags: 0
@@ -22633,7 +23535,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1079783865
 BoxCollider:
@@ -22753,7 +23654,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1091144176
 BoxCollider:
@@ -22873,7 +23773,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1092298597
 BoxCollider:
@@ -22993,7 +23892,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1096126322
 BoxCollider:
@@ -23113,7 +24011,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1100713369
 BoxCollider:
@@ -23233,7 +24130,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1113657604
 BoxCollider:
@@ -23353,7 +24249,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1115245705
 BoxCollider:
@@ -23473,7 +24368,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1116394799
 BoxCollider:
@@ -23537,6 +24431,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116394796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1123725303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1123725304}
+  - component: {fileID: 1123725306}
+  - component: {fileID: 1123725305}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1123725304
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123725303}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 50870182}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1123725305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123725303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1123725306
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123725303}
+  m_CullTransparentMesh: 1
 --- !u!1 &1126035630
 GameObject:
   m_ObjectHideFlags: 0
@@ -23593,7 +24562,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1126035633
 BoxCollider:
@@ -23713,7 +24681,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1135455091
 BoxCollider:
@@ -23833,7 +24800,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1138479098
 BoxCollider:
@@ -23953,7 +24919,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1138546275
 BoxCollider:
@@ -24073,7 +25038,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1153777686
 BoxCollider:
@@ -24193,7 +25157,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1159533188
 BoxCollider:
@@ -24313,7 +25276,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1167256513
 BoxCollider:
@@ -24433,7 +25395,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1180584277
 BoxCollider:
@@ -24553,7 +25514,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1182843877
 BoxCollider:
@@ -24617,6 +25577,172 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182843874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1187655801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187655802}
+  - component: {fileID: 1187655804}
+  - component: {fileID: 1187655803}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1187655802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187655801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 953382349}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1187655803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187655801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1187655804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187655801}
+  m_CullTransparentMesh: 1
+--- !u!1 &1188955620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188955621}
+  - component: {fileID: 1188955622}
+  m_Layer: 5
+  m_Name: Slider (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1188955621
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188955620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 381766352}
+  - {fileID: 1953890426}
+  - {fileID: 953382349}
+  - {fileID: 70450175}
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -393.9, y: -254.6}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1188955622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188955620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1187655803}
+  m_FillRect: {fileID: 284166498}
+  m_HandleRect: {fileID: 1187655802}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0.5
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1189654490
 GameObject:
   m_ObjectHideFlags: 0
@@ -24673,7 +25799,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1189654493
 BoxCollider:
@@ -24793,7 +25918,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1197678622
 BoxCollider:
@@ -24913,7 +26037,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1200617368
 BoxCollider:
@@ -25033,7 +26156,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1201055328
 BoxCollider:
@@ -25153,7 +26275,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1202413112
 BoxCollider:
@@ -25273,7 +26394,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1211970768
 BoxCollider:
@@ -25393,7 +26513,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1220423206
 BoxCollider:
@@ -25513,7 +26632,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1230917635
 BoxCollider:
@@ -25633,7 +26751,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1235813873
 BoxCollider:
@@ -25753,7 +26870,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1240619669
 BoxCollider:
@@ -25873,7 +26989,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1242508960
 BoxCollider:
@@ -25993,7 +27108,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1249963210
 BoxCollider:
@@ -26113,7 +27227,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1256005555
 BoxCollider:
@@ -26233,7 +27346,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1269256684
 BoxCollider:
@@ -26353,7 +27465,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1272538900
 BoxCollider:
@@ -26473,7 +27584,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1284748399
 BoxCollider:
@@ -26593,7 +27703,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1284972286
 BoxCollider:
@@ -26657,6 +27766,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284972283}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1289686301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289686302}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1289686302
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289686301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1078262724}
+  m_Father: {fileID: 321902606}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1294405711
 GameObject:
   m_ObjectHideFlags: 0
@@ -26699,7 +27844,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1294405713
 BoxCollider:
@@ -26833,7 +27977,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1294811600
 BoxCollider:
@@ -26953,7 +28096,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1302310002
 BoxCollider:
@@ -27073,7 +28215,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1303205883
 BoxCollider:
@@ -27193,7 +28334,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1309392548
 BoxCollider:
@@ -27313,7 +28453,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1311209846
 BoxCollider:
@@ -27433,7 +28572,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1312567832
 BoxCollider:
@@ -27553,7 +28691,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1314214697
 BoxCollider:
@@ -27673,7 +28810,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1315999789
 BoxCollider:
@@ -27793,7 +28929,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1318031087
 BoxCollider:
@@ -27913,7 +29048,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1325290094
 BoxCollider:
@@ -28033,7 +29167,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1333099424
 BoxCollider:
@@ -28153,7 +29286,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1335924088
 BoxCollider:
@@ -28273,7 +29405,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1339205356
 BoxCollider:
@@ -28393,7 +29524,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1344185701
 BoxCollider:
@@ -28513,7 +29643,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1345415470
 BoxCollider:
@@ -28633,7 +29762,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1345882203
 BoxCollider:
@@ -28753,7 +29881,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1358235026
 BoxCollider:
@@ -28873,7 +30000,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1361561324
 BoxCollider:
@@ -28979,7 +30105,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1363146195
 BoxCollider:
@@ -29113,7 +30238,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1371655527
 BoxCollider:
@@ -29177,6 +30301,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371655524}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1372415071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372415072}
+  - component: {fileID: 1372415074}
+  - component: {fileID: 1372415073}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1372415072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372415071}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 832439768}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1372415073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372415071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1372415074
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372415071}
+  m_CullTransparentMesh: 1
 --- !u!1 &1394189028
 GameObject:
   m_ObjectHideFlags: 0
@@ -29233,7 +30432,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1394189031
 BoxCollider:
@@ -29353,7 +30551,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1404897335
 BoxCollider:
@@ -29473,7 +30670,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1405825438
 BoxCollider:
@@ -29593,7 +30789,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1417047020
 BoxCollider:
@@ -29699,7 +30894,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1417959924
 BoxCollider:
@@ -29833,7 +31027,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1430453037
 BoxCollider:
@@ -29897,6 +31090,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430453034}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1432387635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432387636}
+  - component: {fileID: 1432387638}
+  - component: {fileID: 1432387637}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1432387636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432387635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 354.59998, y: -207.41936}
+  m_SizeDelta: {x: 163.2, y: 176.8387}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1432387637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432387635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1432387638
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432387635}
+  m_CullTransparentMesh: 1
 --- !u!1 &1433696779
 GameObject:
   m_ObjectHideFlags: 0
@@ -29953,7 +31221,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1433696782
 BoxCollider:
@@ -30073,7 +31340,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1437022048
 BoxCollider:
@@ -30193,7 +31459,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1439738264
 BoxCollider:
@@ -30313,7 +31578,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1441639530
 BoxCollider:
@@ -30433,7 +31697,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1453780732
 BoxCollider:
@@ -30553,7 +31816,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1454226489
 BoxCollider:
@@ -30673,7 +31935,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1456328958
 BoxCollider:
@@ -30793,7 +32054,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1458101679
 BoxCollider:
@@ -30913,7 +32173,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1460470787
 BoxCollider:
@@ -31033,7 +32292,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1478050810
 BoxCollider:
@@ -31153,7 +32411,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1478388259
 BoxCollider:
@@ -31217,6 +32474,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478388256}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1482998449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1482998450}
+  - component: {fileID: 1482998452}
+  - component: {fileID: 1482998451}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1482998450
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482998449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 354, y: -254}
+  m_SizeDelta: {x: 80, y: 68.8414}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482998451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482998449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u84DD\u8272\uFF1A\u7834\u4EA7\r\n\u7EA2\u8272\uFF1A\u9694\u79BB\r\n\u9ED1\u8272\uFF1A\u6B7B\u4EA1\r\n\u7EFF\u8272\uFF1A\u6B63\u5E38"
+--- !u!222 &1482998452
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482998449}
+  m_CullTransparentMesh: 1
 --- !u!1 &1486691436
 GameObject:
   m_ObjectHideFlags: 0
@@ -31273,7 +32609,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1486691439
 BoxCollider:
@@ -31725,7 +33060,7 @@ Transform:
   - {fileID: 644847217}
   - {fileID: 363354227}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1487247296
 GameObject:
@@ -31783,7 +33118,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1487247299
 BoxCollider:
@@ -31903,7 +33237,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1499038941
 BoxCollider:
@@ -32023,7 +33356,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1500676900
 BoxCollider:
@@ -32143,7 +33475,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1506658862
 BoxCollider:
@@ -32263,7 +33594,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1508870695
 BoxCollider:
@@ -32383,7 +33713,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1517995952
 BoxCollider:
@@ -32503,7 +33832,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1551288354
 BoxCollider:
@@ -32567,6 +33895,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551288351}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1556116024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556116025}
+  - component: {fileID: 1556116026}
+  m_Layer: 5
+  m_Name: Slider (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1556116025
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556116024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 287565438}
+  - {fileID: 1681713909}
+  - {fileID: 154895286}
+  - {fileID: 1995512807}
+  m_Father: {fileID: 1955577324}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -393.9, y: -233}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1556116026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556116024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 398558966}
+  m_FillRect: {fileID: 449572288}
+  m_HandleRect: {fileID: 398558965}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0.5
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1563279743
 GameObject:
   m_ObjectHideFlags: 0
@@ -32609,7 +34028,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1563279745
 BoxCollider:
@@ -32763,8 +34181,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565256263}
-  m_LocalRotation: {x: 0.33188936, y: -0, z: -0, w: 0.9433183}
-  m_LocalPosition: {x: 0, y: 13, z: -16.96}
+  m_LocalRotation: {x: -0.34366414, y: -0.61988324, z: 0.3467282, w: -0.61434466}
+  m_LocalPosition: {x: -67.20782, y: 72.99632, z: -3.2269783}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -32826,7 +34244,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1580318776
 BoxCollider:
@@ -32946,7 +34363,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1582036763
 BoxCollider:
@@ -33106,7 +34522,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1588253781
 BoxCollider:
@@ -33226,7 +34641,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1596340801
 BoxCollider:
@@ -33346,7 +34760,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1596939855
 BoxCollider:
@@ -33466,7 +34879,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1600180539
 BoxCollider:
@@ -33530,6 +34942,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600180536}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1603462634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603462635}
+  - component: {fileID: 1603462637}
+  - component: {fileID: 1603462636}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1603462635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603462634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 321902606}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160.9, y: -6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1603462636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603462634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u6536\u5165\u7CFB\u6570"
+--- !u!222 &1603462637
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603462634}
+  m_CullTransparentMesh: 1
 --- !u!1 &1610823210
 GameObject:
   m_ObjectHideFlags: 0
@@ -33586,7 +35077,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1610823213
 BoxCollider:
@@ -33706,7 +35196,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1617879051
 BoxCollider:
@@ -33826,7 +35315,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1626849379
 BoxCollider:
@@ -33946,7 +35434,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1628595407
 BoxCollider:
@@ -34066,7 +35553,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1629065392
 BoxCollider:
@@ -34186,7 +35672,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1640898011
 BoxCollider:
@@ -34306,7 +35791,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1641060047
 BoxCollider:
@@ -34426,7 +35910,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1641392802
 BoxCollider:
@@ -34546,7 +36029,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1643855290
 BoxCollider:
@@ -34666,7 +36148,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1649339664
 BoxCollider:
@@ -34786,7 +36267,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1654966402
 BoxCollider:
@@ -34906,7 +36386,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1656512884
 BoxCollider:
@@ -35026,7 +36505,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1660945296
 BoxCollider:
@@ -35184,7 +36662,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1681493985
 GameObject:
@@ -35242,7 +36720,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1681493988
 BoxCollider:
@@ -35306,6 +36783,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681493985}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1681713908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681713909}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1681713909
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681713908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 449572288}
+  m_Father: {fileID: 1556116025}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1684394629
 GameObject:
   m_ObjectHideFlags: 0
@@ -35336,7 +36849,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35441,7 +36954,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1687969934
 BoxCollider:
@@ -35561,7 +37073,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1695237961
 BoxCollider:
@@ -35681,7 +37192,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1702506520
 BoxCollider:
@@ -35801,7 +37311,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1709837611
 BoxCollider:
@@ -35921,7 +37430,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1716222171
 BoxCollider:
@@ -36013,7 +37521,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716490137
 GameObject:
@@ -36071,7 +37579,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1716490140
 BoxCollider:
@@ -36191,7 +37698,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1717477189
 BoxCollider:
@@ -36311,7 +37817,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1721978830
 BoxCollider:
@@ -36431,7 +37936,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1726667671
 BoxCollider:
@@ -36551,7 +38055,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1731280242
 BoxCollider:
@@ -36671,7 +38174,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1741306181
 BoxCollider:
@@ -36791,7 +38293,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1748753316
 BoxCollider:
@@ -36911,7 +38412,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1757349587
 BoxCollider:
@@ -37031,7 +38531,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1768658072
 BoxCollider:
@@ -37151,7 +38650,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1775315951
 BoxCollider:
@@ -37279,7 +38777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781389640
 GameObject:
@@ -37337,7 +38835,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1781389643
 BoxCollider:
@@ -37457,7 +38954,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1781444886
 BoxCollider:
@@ -37577,7 +39073,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1782132043
 BoxCollider:
@@ -37641,103 +39136,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782132040}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1791045815
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_Name
-      value: '[Graphy]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
 --- !u!1 &1797877366
 GameObject:
   m_ObjectHideFlags: 0
@@ -37794,7 +39192,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1797877369
 BoxCollider:
@@ -37914,7 +39311,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1803715780
 BoxCollider:
@@ -38034,7 +39430,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1807235385
 BoxCollider:
@@ -38154,7 +39549,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1810222143
 BoxCollider:
@@ -38274,7 +39668,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1811497399
 BoxCollider:
@@ -38368,7 +39761,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38473,7 +39866,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1816011027
 BoxCollider:
@@ -38593,7 +39985,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1816111267
 BoxCollider:
@@ -38713,7 +40104,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1816943600
 BoxCollider:
@@ -38833,7 +40223,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1820497145
 BoxCollider:
@@ -38953,7 +40342,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1821835499
 BoxCollider:
@@ -39073,7 +40461,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1822809819
 BoxCollider:
@@ -39193,7 +40580,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1827702362
 BoxCollider:
@@ -39313,7 +40699,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1829335957
 BoxCollider:
@@ -39433,7 +40818,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1832619397
 BoxCollider:
@@ -39553,7 +40937,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1844156409
 BoxCollider:
@@ -39673,7 +41056,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1844654359
 BoxCollider:
@@ -39793,7 +41175,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1847897533
 BoxCollider:
@@ -39913,7 +41294,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1850196415
 BoxCollider:
@@ -40033,7 +41413,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1850782478
 BoxCollider:
@@ -40153,7 +41532,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1852032359
 BoxCollider:
@@ -40273,7 +41651,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1853973639
 BoxCollider:
@@ -40393,7 +41770,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1854765032
 BoxCollider:
@@ -40513,7 +41889,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1859127822
 BoxCollider:
@@ -40633,7 +42008,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1860820538
 BoxCollider:
@@ -40753,7 +42127,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1877320459
 BoxCollider:
@@ -40873,7 +42246,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1880471222
 BoxCollider:
@@ -40993,7 +42365,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1882720987
 BoxCollider:
@@ -41113,7 +42484,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1884308735
 BoxCollider:
@@ -41233,7 +42603,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1889022282
 BoxCollider:
@@ -41339,7 +42708,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1890040414
 BoxCollider:
@@ -41473,7 +42841,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1897261669
 BoxCollider:
@@ -41593,7 +42960,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1902422668
 BoxCollider:
@@ -41713,7 +43079,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1903400895
 BoxCollider:
@@ -41833,7 +43198,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1921954354
 BoxCollider:
@@ -41953,7 +43317,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1922599767
 BoxCollider:
@@ -42073,7 +43436,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1924723113
 BoxCollider:
@@ -42193,7 +43555,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1937891805
 BoxCollider:
@@ -42313,7 +43674,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1944800186
 BoxCollider:
@@ -42377,6 +43737,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944800183}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1953890425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1953890426}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1953890426
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953890425}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 284166498}
+  m_Father: {fileID: 1188955621}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1955334207
 GameObject:
   m_ObjectHideFlags: 0
@@ -42433,7 +43829,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1955334210
 BoxCollider:
@@ -42588,6 +43983,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1432387636}
   - {fileID: 51877809}
   - {fileID: 98579726}
   - {fileID: 1684394630}
@@ -42596,8 +43992,13 @@ RectTransform:
   - {fileID: 1811579569}
   - {fileID: 2034236463}
   - {fileID: 812277528}
+  - {fileID: 1482998450}
+  - {fileID: 321902606}
+  - {fileID: 13857056}
+  - {fileID: 1188955621}
+  - {fileID: 1556116025}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -42637,6 +44038,10 @@ MonoBehaviour:
   bronum: {fileID: 98579727}
   dednum: {fileID: 1684394631}
   moneynum: {fileID: 2034236464}
+  slider: {fileID: 321902607}
+  slider1: {fileID: 13857057}
+  slider2: {fileID: 1188955622}
+  slider3: {fileID: 1556116026}
   before: 0
   now: 0
 --- !u!4 &1961597917
@@ -42651,7 +44056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969622794
 GameObject:
@@ -42709,7 +44114,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1969622797
 BoxCollider:
@@ -42829,7 +44233,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1972424093
 BoxCollider:
@@ -42949,7 +44352,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1974315913
 BoxCollider:
@@ -43069,7 +44471,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &1976003473
 BoxCollider:
@@ -43133,6 +44534,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976003470}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1995512806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995512807}
+  - component: {fileID: 1995512809}
+  - component: {fileID: 1995512808}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1995512807
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995512806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1556116025}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160.9, y: -6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1995512808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995512806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u79FB\u52A8\u8DDD\u79BB"
+--- !u!222 &1995512809
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995512806}
+  m_CullTransparentMesh: 1
 --- !u!1 &2001994605
 GameObject:
   m_ObjectHideFlags: 0
@@ -43189,7 +44669,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2001994608
 BoxCollider:
@@ -43309,7 +44788,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2005706730
 BoxCollider:
@@ -43429,7 +44907,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2007491377
 BoxCollider:
@@ -43549,7 +45026,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2016999020
 BoxCollider:
@@ -43669,7 +45145,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2023809690
 BoxCollider:
@@ -43789,7 +45264,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2032803364
 BoxCollider:
@@ -43883,7 +45357,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955577324}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -43988,7 +45462,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2036353369
 BoxCollider:
@@ -44108,7 +45581,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2047801113
 BoxCollider:
@@ -44228,7 +45700,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2057704842
 BoxCollider:
@@ -44348,7 +45819,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2059002339
 BoxCollider:
@@ -44468,7 +45938,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2062743771
 BoxCollider:
@@ -44588,7 +46057,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2078340591
 BoxCollider:
@@ -44708,7 +46176,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2082423802
 BoxCollider:
@@ -44772,6 +46239,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082423799}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2083184342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083184343}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2083184343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083184342}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 194337657}
+  m_Father: {fileID: 13857056}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2090014494
 GameObject:
   m_ObjectHideFlags: 0
@@ -44828,7 +46331,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2090014497
 BoxCollider:
@@ -44948,7 +46450,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2090433352
 BoxCollider:
@@ -45068,7 +46569,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2099223276
 BoxCollider:
@@ -45188,7 +46688,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2104467277
 BoxCollider:
@@ -45294,7 +46793,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2105167709
 BoxCollider:
@@ -45428,7 +46926,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2115421406
 BoxCollider:
@@ -45548,7 +47045,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2115684213
 BoxCollider:
@@ -45612,6 +47108,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115684210}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2133906169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2133906170}
+  - component: {fileID: 2133906172}
+  - component: {fileID: 2133906171}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2133906170
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133906169}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 13857056}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2133906171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133906169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2133906172
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133906169}
+  m_CullTransparentMesh: 1
 --- !u!1 &2134867784
 GameObject:
   m_ObjectHideFlags: 0
@@ -45668,7 +47239,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2134867787
 BoxCollider:
@@ -45788,7 +47358,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2135018278
 BoxCollider:
@@ -45908,7 +47477,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2142915117
 BoxCollider:
@@ -46028,7 +47596,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2144197020
 BoxCollider:
@@ -46148,7 +47715,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2144704906
 BoxCollider:
@@ -46268,7 +47834,6 @@ MonoBehaviour:
   money: 0
   make: 0
   cost: 0
-  deathchance: 0
   job: 
 --- !u!65 &2146640329
 BoxCollider:

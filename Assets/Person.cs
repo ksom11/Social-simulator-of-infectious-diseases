@@ -5,18 +5,17 @@ using System;
 
 public class Person : MonoBehaviour
 {
-    public bool dead = false;
-    public bool infected = false;
-    public bool isolated= false;
-    public bool isbroken= false;
-    public int isolatedtime = 0;
-    public int isbrokentime = 0;
-    public int yearsold=0;
-    public float money = 0;
-    public float make = 0;
-    public float cost = 0;
-    public float deathchance = 0;
-    float infectdes =2;
+    public bool dead = false;//是否死亡
+    public bool infected = false;//是否感染
+    public bool isolated = false;//是否隔离
+    public bool isbroken = false;//是否破产
+    public int isolatedtime = 0;//被隔离时间
+    public int isbrokentime = 0;//破产时间
+    public int yearsold = 0;//年龄
+    public float money = 0;//存款
+    public float make = 0;//收入
+    public float cost = 0;//花销
+    float infectdes = 2;//感染距离
 
     public string job = "";
     // Start is called before the first frame update
@@ -25,7 +24,7 @@ public class Person : MonoBehaviour
         Data.persons.Add(this);
         randset();
         randcread();
-        
+
         //getperson();
     }
 
@@ -39,20 +38,20 @@ public class Person : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        
-        if(!dead)
+        if (!dead)
         {
             //if(this.transform.position.x<500&& this.transform.position.x > -500 && this.transform.position.z < 500 && this.transform.position.z > -500)
             //{
             //Debug.Log("runing");
             if (isolated)
             {
+                GetComponent<Renderer>().material.color = new Color(1, 0, 0);
                 isolatedtime++;
             }
 
             if (isolatedtime > 1000)
             {
+                GetComponent<Renderer>().material.color = new Color(0, 1, 0);
                 isolated = false;
                 infected = false;
                 isolatedtime = 0;
@@ -60,6 +59,7 @@ public class Person : MonoBehaviour
 
             if (isbroken)
             {
+                GetComponent<Renderer>().material.color = new Color(0, 0, 1);
                 isbrokentime++;
             }
 
@@ -77,7 +77,7 @@ public class Person : MonoBehaviour
                 pmove(this.gameObject);
             }
 
-            
+
             if (!isolated)
             {
                 if (getinf(this.gameObject))
@@ -85,30 +85,30 @@ public class Person : MonoBehaviour
                     infected = true;
                     Data.infledNum++;
                     isolate();
-
                 }
             }
-            
+
 
             if (!isolated)
             {
                 makemoney();
             }
-
-
             costmoney();
             randdead(this);
         }
+        else
+        {
+            GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+        }
 
-        
 
     }
 
     void randdead(Person P)
     {
-        if(infected)
+        if (infected)
         {
-            if(UnityEngine.Random.Range(0,10000)==50)
+            if (UnityEngine.Random.Range(0, 10000) == 50)
             {
                 dead = true;
                 Data.persons.Remove(P);
@@ -120,21 +120,21 @@ public class Person : MonoBehaviour
     void randcread()
     {
         var v = this.transform.position;
-        yearsold =UnityEngine. Random.Range(1, 101);
+        yearsold = UnityEngine.Random.Range(1, 101);
         money = UnityEngine.Random.Range(10000, 1000000);
         //Debug.Log(1 / magnitude(v));
-        cost= UnityEngine.Random.Range(50, 1000);
-        make= UnityEngine.Random.Range(100, 10000) ;
+        cost = UnityEngine.Random.Range(50, 1000);
+        make = UnityEngine.Random.Range(100, 10000);
     }
 
     void pmove(GameObject person)
     {
-        switch (UnityEngine. Random.Range(0, 5))
+        switch (UnityEngine.Random.Range(0, 5))
         {
             case 0:
                 {
-                    var v = person. transform.position;
-                    v.x = v.x + 1f;
+                    var v = person.transform.position;
+                    v.x = v.x + SystemCoefficients.MovingRange;
                     person.transform.position = v;
                     break;
                 }
@@ -142,21 +142,21 @@ public class Person : MonoBehaviour
             case 1:
                 {
                     var v = person.transform.position;
-                    v.x = v.x - 1f;
+                    v.x = v.x - SystemCoefficients.MovingRange;
                     person.transform.position = v;
                     break;
                 }
             case 2:
                 {
                     var v = person.transform.position;
-                    v.z = v.z + 1f;
+                    v.z = v.z + SystemCoefficients.MovingRange;
                     person.transform.position = v;
                     break;
                 }
             case 3:
                 {
                     var v = person.transform.position;
-                    v.z = v.z - 1f;
+                    v.z = v.z - SystemCoefficients.MovingRange;
                     person.transform.position = v;
                     break;
                 }
@@ -165,16 +165,16 @@ public class Person : MonoBehaviour
 
     void makemoney()
     {
-        money = money + make;
+        money = money + make*SystemCoefficients.K_make;
     }
 
     void costmoney()
     {
-        if(!isbroken)
+        if (!isbroken)
         {
-            if (money > cost)
+            if (money > cost*SystemCoefficients.K_cost)
             {
-                money = money - cost;
+                money = money - cost*SystemCoefficients.K_cost;
             }
 
             else
@@ -209,9 +209,9 @@ public class Person : MonoBehaviour
         foreach (var item in Data.persons)
         {
             //item.name.Contains("Cube (")&&
-            if (item!=person)
+            if (item != person)
             {
-                
+
                 var i = item.GetComponent<Person>();
                 if (p.dead == false && i.dead == false)
                 {
@@ -221,7 +221,7 @@ public class Person : MonoBehaviour
                     var des = vv - v;
                     */
                     //person.transform.position- item.transform.position
-                    if ((person.transform.position - item.transform.position).sqrMagnitude < infectdes)
+                    if ((person.transform.position - item.transform.position).sqrMagnitude < infectdes*SystemCoefficients.K_infectdes)
                     {
                         //Debug.Log("des:" + magnitude(des));
                         //Debug.Log(person.name + " : " + item.name);
@@ -231,15 +231,15 @@ public class Person : MonoBehaviour
                         }
 
                     }
-                    
+
                 }
-                
-                
+
+
             }
         }
         return false;
     }
-    
+
     public float magnitude(Vector3 v)
     {
 
@@ -252,8 +252,8 @@ public class Person : MonoBehaviour
         //return v.x;
         //return v.x + v.y + v.z;
         return v.sqrMagnitude;
-            //return Mathf.Sqrt(X + Y + Z);//开根号,最终返回向量的长度/模/大小.
-        
+        //return Mathf.Sqrt(X + Y + Z);//开根号,最终返回向量的长度/模/大小.
+
 
     }
 
@@ -264,6 +264,5 @@ public class Person : MonoBehaviour
         v.z = UnityEngine.Random.Range(-50, 50);
         this.transform.position = v;
     }
-
-    
 }
+
