@@ -21,16 +21,25 @@ public class Manager : MonoBehaviour
 
     public float before = 0;
     public float now = 0;
+
+    //List<Person_withoutTransf> persons = new List<Person_withoutTransf>();
+
     void Start()
     {
-        
+        Debug.Log(!false);
+        for (int i = 0; i < 1000; i++)
+        {
+            Person_withoutTransf person = new Person_withoutTransf();
+            person.Start2();
+        }
     }
 
     private void FixedUpdate()
     {
-        
-
-
+        for (int j = 0; j < Data.persons2.Count; j++)
+        {
+            Data.persons2[j].FixedUpdate2();
+        }
     }
 
     // Update is called once per frame
@@ -43,7 +52,7 @@ public class Manager : MonoBehaviour
 
         before = now;
         now = 0;
-        foreach (var a in Data.persons)//模拟后期出现总和数值过大，计算TOTALMONEY失效
+        foreach (var a in Data.persons2)//模拟后期出现总和数值过大，计算TOTALMONEY失效
         {
             now = now + a.money;
         }
