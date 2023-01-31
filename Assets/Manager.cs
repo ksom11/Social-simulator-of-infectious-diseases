@@ -22,23 +22,32 @@ public class Manager : MonoBehaviour
     public float before = 0;
     public float now = 0;
 
-    //List<Person_withoutTransf> persons = new List<Person_withoutTransf>();
+    List<Person_withoutTransf> City_1 = new List<Person_withoutTransf>();
+    List<Person_withoutTransf> City_2 = new List<Person_withoutTransf>();
 
     void Start()
     {
-        Debug.Log(!false);
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 100; i++)
         {
             Person_withoutTransf person = new Person_withoutTransf();
-            person.Start2();
+            person.Start2(City_1);
+        }
+        for (int i = 0; i < 100; i++)
+        {
+            Person_withoutTransf person = new Person_withoutTransf();
+            person.Start2(City_2);
         }
     }
 
     private void FixedUpdate()
     {
-        for (int j = 0; j < Data.persons2.Count; j++)
+        for (int j = 0; j < City_1.Count; j++)
         {
-            Data.persons2[j].FixedUpdate2();
+            City_1[j].FixedUpdate2(City_1);
+        }
+        for (int j = 0; j < City_2.Count; j++)
+        {
+            City_2[j].FixedUpdate2(City_2);
         }
     }
 
@@ -52,7 +61,12 @@ public class Manager : MonoBehaviour
 
         before = now;
         now = 0;
-        foreach (var a in Data.persons2)//模拟后期出现总和数值过大，计算TOTALMONEY失效
+        //City_1.concat
+        foreach (var a in City_1)//模拟后期出现总和数值过大，计算TOTALMONEY失效
+        {
+            now = now + a.money;
+        }
+        foreach (var a in City_2)
         {
             now = now + a.money;
         }

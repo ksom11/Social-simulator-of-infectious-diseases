@@ -19,14 +19,14 @@ public class Person_withoutTransf
 
     public string job = "";
 
-    public void Start2()
+    public void Start2(List<Person_withoutTransf> City)
     {
-        Data.persons2.Add(this);
+        City.Add(this);
         randset();
         randcread();
     }
 
-    public void FixedUpdate2()
+    public void FixedUpdate2(List<Person_withoutTransf> City)
     {
         if (!dead)
         {
@@ -70,7 +70,7 @@ public class Person_withoutTransf
 
             if (!isolated)
             {
-                if (getinf(this))
+                if (getinf(this,City))
                 {
                     infected = true;
                     Data.infledNum++;
@@ -78,13 +78,12 @@ public class Person_withoutTransf
                 }
             }
 
-
             if (!isolated)
             {
                 makemoney();
             }
             costmoney();
-            randdead(this);
+            randdead(this,City);
         }
         else
         {
@@ -92,14 +91,14 @@ public class Person_withoutTransf
         }
     }
 
-    void randdead(Person_withoutTransf P)
+    void randdead(Person_withoutTransf P,List<Person_withoutTransf>City)
     {
         if (infected)
         {
             if (UnityEngine.Random.Range(0, 10000) == 50)
             {
                 dead = true;
-                Data.persons2.Remove(P);
+                City.Remove(P);
                 Data.deadNum++;
             }
         }
@@ -184,7 +183,7 @@ public class Person_withoutTransf
         isolated = true;
     }
 
-    bool getinf(Person_withoutTransf person)
+    bool getinf(Person_withoutTransf person,List<Person_withoutTransf>City)
     //void getperson()
     {
         //GameObject[] obj = FindObjectOfType(typeof( GameObject)) as GameObject[];
@@ -200,7 +199,7 @@ public class Person_withoutTransf
         //var all = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
         //all.Initialize();
         var p = person;//.GetComponent<Person>();
-        foreach (var item in Data.persons2)
+        foreach (var item in City)
         {
             //item.name.Contains("Cube (")&&
             if (item != person)

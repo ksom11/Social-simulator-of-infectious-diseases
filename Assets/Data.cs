@@ -9,4 +9,5 @@ public class Data
     public static int deadNum = 0;
     public static float TotalMoney = 0;
     public static List<Person> persons = new List<Person>();
+    public static List<Person_withoutTransf> persons2 = new List<Person_withoutTransf>();
 }

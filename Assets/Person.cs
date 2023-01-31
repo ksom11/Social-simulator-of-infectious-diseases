@@ -134,33 +134,39 @@ public class Person : MonoBehaviour
             case 0:
                 {
                     var v = person.transform.position;
-                    v.x = v.x + SystemCoefficients.MovingRange;
+                    v.x = Clamp( v.x + SystemCoefficients.MovingRange,-50,50);
                     person.transform.position = v;
                     break;
                 }
-
             case 1:
                 {
                     var v = person.transform.position;
-                    v.x = v.x - SystemCoefficients.MovingRange;
+                    v.x = Clamp(v.x - SystemCoefficients.MovingRange, -50, 50);
                     person.transform.position = v;
                     break;
                 }
             case 2:
                 {
                     var v = person.transform.position;
-                    v.z = v.z + SystemCoefficients.MovingRange;
+                    v.z = Clamp(v.z + SystemCoefficients.MovingRange, -50, 50);
                     person.transform.position = v;
                     break;
                 }
             case 3:
                 {
                     var v = person.transform.position;
-                    v.z = v.z - SystemCoefficients.MovingRange;
+                    v.z = Clamp(v.z - SystemCoefficients.MovingRange, -50, 50);
                     person.transform.position = v;
                     break;
                 }
         }
+    }
+
+    float Clamp(float value,float min,float max)
+    {
+        if (value > max) return max;
+        if (value < min) return min;
+        return value;
     }
 
     void makemoney()
@@ -211,7 +217,6 @@ public class Person : MonoBehaviour
             //item.name.Contains("Cube (")&&
             if (item != person)
             {
-
                 var i = item.GetComponent<Person>();
                 if (p.dead == false && i.dead == false)
                 {
@@ -229,9 +234,7 @@ public class Person : MonoBehaviour
                         {
                             return true;
                         }
-
                     }
-
                 }
 
 
