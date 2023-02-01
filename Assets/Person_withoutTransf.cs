@@ -5,17 +5,18 @@ using UnityEngine;
 public class Person_withoutTransf
 {
     public Vector3 position;
-    public bool dead = false;//ÊÇ·ñËÀÍö
-    public bool infected = false;//ÊÇ·ñ¸ÐÈ¾
-    public bool isolated = false;//ÊÇ·ñ¸ôÀë
-    public bool isbroken = false;//ÊÇ·ñÆÆ²ú
-    public int isolatedtime = 0;//±»¸ôÀëÊ±¼ä
-    public int isbrokentime = 0;//ÆÆ²úÊ±¼ä
-    public int yearsold = 0;//ÄêÁä
-    public float money = 0;//´æ¿î
-    public float make = 0;//ÊÕÈë
-    public float cost = 0;//»¨Ïú
-    float infectdes = 2;//¸ÐÈ¾¾àÀë
+    public bool dead = false;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
+    public bool infected = false;//ï¿½Ç·ï¿½ï¿½È¾
+    public bool isolated = false;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+    public bool isbroken = false;//ï¿½Ç·ï¿½ï¿½Æ²ï¿½
+    public int isolatedtime = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+    public int isbrokentime = 0;//ï¿½Æ²ï¿½Ê±ï¿½ï¿½
+    public int yearsold = 0;//ï¿½ï¿½ï¿½ï¿½
+    public float money = 0;//ï¿½ï¿½ï¿½
+    public float make = 0;//ï¿½ï¿½ï¿½ï¿½
+    public float cost = 0;//ï¿½ï¿½ï¿½ï¿½
+    public float hungery = 100;
+    float infectdes = 2;//ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½
 
     public string job = "";
 
@@ -58,7 +59,7 @@ public class Person_withoutTransf
                 //Destroy(this.gameObject);
                 //this.gameObject.SetActive(false);
                 dead = true;
-                Data.deadNum++;
+                CityData.deadNum++;
             }
 
 
@@ -73,7 +74,7 @@ public class Person_withoutTransf
                 if (getinf(this,City))
                 {
                     infected = true;
-                    Data.infledNum++;
+                    CityData.infledNum++;
                     isolate();
                 }
             }
@@ -99,7 +100,7 @@ public class Person_withoutTransf
             {
                 dead = true;
                 City.Remove(P);
-                Data.deadNum++;
+                CityData.deadNum++;
             }
         }
     }
@@ -165,6 +166,20 @@ public class Person_withoutTransf
     {
         if (!isbroken)
         {
+            if(hungery<100)
+            {
+                if(CityData.goods[0].Number>0)
+                {
+                    CityData.goods[0].Number--;
+                    money -= CityData.goods[0].Price;
+                    hungery = 100;
+                }
+                else
+                {
+                    hungery++;
+                }
+            }
+
             if (money > cost * SystemCoefficients.K_cost)
             {
                 money = money - cost * SystemCoefficients.K_cost;
@@ -173,10 +188,12 @@ public class Person_withoutTransf
             else
             {
                 isbroken = true;
-                Data.brokenNum++;
+                CityData.brokenNum++;
             }
         }
     }
+
+
 
     void isolate()
     {
@@ -233,7 +250,7 @@ public class Person_withoutTransf
     public float magnitude(Vector3 v)
     {
 
-        //×ÔÉí¸÷·ÖÁ¿Æ½·½ÔËËã.
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
         /*
         float X = v.x * v.x;
         float Y = v.y * v.y;
@@ -242,7 +259,7 @@ public class Person_withoutTransf
         //return v.x;
         //return v.x + v.y + v.z;
         return v.sqrMagnitude;
-        //return Mathf.Sqrt(X + Y + Z);//¿ª¸ùºÅ,×îÖÕ·µ»ØÏòÁ¿µÄ³¤¶È/Ä£/´óÐ¡.
+        //return Mathf.Sqrt(X + Y + Z);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Õ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½/Ä£/ï¿½ï¿½Ð¡.
 
 
     }

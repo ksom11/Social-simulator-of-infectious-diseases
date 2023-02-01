@@ -37,6 +37,8 @@ public class Manager : MonoBehaviour
             Person_withoutTransf person = new Person_withoutTransf();
             person.Start2(City_2);
         }
+        Good Food = new Good(); Food.Number = 0;
+        CityData.goods.Add(Food);
     }
 
     private void FixedUpdate()
@@ -49,6 +51,9 @@ public class Manager : MonoBehaviour
         {
             City_2[j].FixedUpdate2(City_2);
         }
+        if (CityData.goods[0].Number == 0) CityData.goods[0].Price *= 1.1f;
+        if (CityData.goods[0].Number > 100) CityData.goods[0].Price *= 0.9f;
+        CityData.goods[0].Number += 100;
     }
 
     // Update is called once per frame
@@ -62,7 +67,7 @@ public class Manager : MonoBehaviour
         before = now;
         now = 0;
         //City_1.concat
-        foreach (var a in City_1)//Ä£ÄâºóÆÚ³öÏÖ×ÜºÍÊýÖµ¹ý´ó£¬¼ÆËãTOTALMONEYÊ§Ð§
+        foreach (var a in City_1)//Ä£ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Üºï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ó£¬¼ï¿½ï¿½ï¿½TOTALMONEYÊ§Ð§
         {
             now = now + a.money;
         }
@@ -70,13 +75,13 @@ public class Manager : MonoBehaviour
         {
             now = now + a.money;
         }
-        Data.TotalMoney = now - before;
+        CityData.TotalMoney = now - before;
 
-        infnum.text = Data.infledNum.ToString();
-        bronum.text = Data.brokenNum.ToString();
-        dednum.text = Data.deadNum.ToString();
-        if(Data.TotalMoney!=0)
-        moneynum.text = Data.TotalMoney.ToString();
+        infnum.text = CityData.infledNum.ToString();
+        bronum.text = CityData.brokenNum.ToString();
+        dednum.text = CityData.deadNum.ToString();
+        if(CityData.TotalMoney!=0)
+        moneynum.text = CityData.TotalMoney.ToString();
     }
 
     float ValToK(float val)
