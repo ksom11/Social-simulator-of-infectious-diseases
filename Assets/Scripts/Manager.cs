@@ -106,7 +106,6 @@ public class Manager : MonoBehaviour
         if((cityA.money + cityB.money) != 0)
         moneynum.text = (cityA.money + cityB.money).ToString();
     }
-
     float ValToK(float val)
     {
         if(val<=0.5)

@@ -15,6 +15,7 @@ public class City
             }
             return Sum;
         }
+        private set { }
     }
 
     public int brokenNum
@@ -28,6 +29,7 @@ public class City
             }
             return Sum;
         }
+        private set { }
     }
     public int deadNum
     {
@@ -40,6 +42,7 @@ public class City
             }
             return Sum;
         }
+        private set { }
     }
     public float money
     {
@@ -52,6 +55,7 @@ public class City
             }
             return Sum;
         }
+        private set { }
     }
     public List<Citizen> citizens = new List<Citizen>();
     public List<Good> goods = new List<Good>();
