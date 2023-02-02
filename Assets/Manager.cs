@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static Manager Instance { get; private set; }
+
     public Text infnum;
     public Text bronum;
     public Text dednum;
@@ -22,38 +23,58 @@ public class Manager : MonoBehaviour
     public float before = 0;
     public float now = 0;
 
-    List<Person_withoutTransf> City_1 = new List<Person_withoutTransf>();
-    List<Person_withoutTransf> City_2 = new List<Person_withoutTransf>();
+    City cityA = new City();
+    City cityB = new City();
+
+    private void Awake()
+    {
+        // Only one instance of debug console is allowed
+        if (!Instance)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     void Start()
     {
         for (int i = 0; i < 100; i++)
         {
             Person_withoutTransf person = new Person_withoutTransf();
-            person.Start2(City_1);
+            person.Start2(cityA.persons);
         }
         for (int i = 0; i < 100; i++)
         {
             Person_withoutTransf person = new Person_withoutTransf();
-            person.Start2(City_2);
+            person.Start2(cityB.persons);
         }
         Good Food = new Good(); Food.Number = 0;
-        CityData.goods.Add(Food);
+        cityA.goods.Add(Food);
+        cityB.goods.Add(Food);
     }
 
     private void FixedUpdate()
     {
-        for (int j = 0; j < City_1.Count; j++)
+        for (int i = 0; i < cityA.persons.Count; i++)
         {
-            City_1[j].FixedUpdate2(City_1);
+            cityA.persons[i].FixedUpdate2(cityA.persons);
         }
-        for (int j = 0; j < City_2.Count; j++)
+        for (int i = 0; i < cityA.persons.Count; i++)
         {
-            City_2[j].FixedUpdate2(City_2);
+            cityA.persons[i].FixedUpdate2(cityB.persons);
         }
-        if (CityData.goods[0].Number == 0) CityData.goods[0].Price *= 1.1f;
-        if (CityData.goods[0].Number > 100) CityData.goods[0].Price *= 0.9f;
-        CityData.goods[0].Number += 100;
+        if (cityA.goods[0].Number == 0) cityA.goods[0].Price *= 1.1f;
+        if (cityA.goods[0].Number > 100) cityA.goods[0].Price *= 0.9f;
+        cityA.goods[0].Number += 100;
+
+        if (cityB.goods[0].Number == 0) cityB.goods[0].Price *= 1.1f;
+        if (cityB.goods[0].Number > 100) cityB.goods[0].Price *= 0.9f;
+        cityB.goods[0].Number += 100;
     }
 
     // Update is called once per frame
@@ -67,11 +88,11 @@ public class Manager : MonoBehaviour
         before = now;
         now = 0;
         //City_1.concat
-        foreach (var a in City_1)//ģ����ڳ����ܺ���ֵ���󣬼���TOTALMONEYʧЧ
+        foreach (var a in cityA.persons)//模拟后期出现总和数值过大，计算TOTALMONEY失效
         {
             now = now + a.money;
         }
-        foreach (var a in City_2)
+        foreach (var a in cityB.persons)
         {
             now = now + a.money;
         }

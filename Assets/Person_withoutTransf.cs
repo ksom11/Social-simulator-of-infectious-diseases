@@ -5,18 +5,18 @@ using UnityEngine;
 public class Person_withoutTransf
 {
     public Vector3 position;
-    public bool dead = false;//�Ƿ�����
-    public bool infected = false;//�Ƿ��Ⱦ
-    public bool isolated = false;//�Ƿ����
-    public bool isbroken = false;//�Ƿ��Ʋ�
-    public int isolatedtime = 0;//������ʱ��
-    public int isbrokentime = 0;//�Ʋ�ʱ��
-    public int yearsold = 0;//����
-    public float money = 0;//���
-    public float make = 0;//����
-    public float cost = 0;//����
-    public float hungery = 100;
-    float infectdes = 2;//��Ⱦ����
+    public bool dead = false;//是否死亡
+    public bool infected = false;//是否感染
+    public bool isolated = false;//是否隔离
+    public bool isbroken = false;//是否破产
+    public int isolatedtime = 0;//被隔离时间
+    public int isbrokentime = 0;//破产时间
+    public int yearsold = 0;//年龄
+    public float money = 0;//存款
+    public float make = 0;//收入
+    public float cost = 0;//花销
+    float infectdes = 2;//感染距离
+    public float hungery = 100;//饥饿值
 
     public string job = "";
 
@@ -31,18 +31,13 @@ public class Person_withoutTransf
     {
         if (!dead)
         {
-            //if(this.transform.position.x<500&& this.transform.position.x > -500 && this.transform.position.z < 500 && this.transform.position.z > -500)
-            //{
-            //Debug.Log("runing");
             if (isolated)
             {
-                //GetComponent<Renderer>().material.color = new Color(1, 0, 0);
                 isolatedtime++;
             }
 
             if (isolatedtime > 1000)
             {
-                //GetComponent<Renderer>().material.color = new Color(0, 1, 0);
                 isolated = false;
                 infected = false;
                 isolatedtime = 0;
@@ -50,14 +45,11 @@ public class Person_withoutTransf
 
             if (isbroken)
             {
-                //GetComponent<Renderer>().material.color = new Color(0, 0, 1);
                 isbrokentime++;
             }
 
             if (isbrokentime > 1000)
             {
-                //Destroy(this.gameObject);
-                //this.gameObject.SetActive(false);
                 dead = true;
                 CityData.deadNum++;
             }
@@ -85,10 +77,6 @@ public class Person_withoutTransf
             }
             costmoney();
             randdead(this,City);
-        }
-        else
-        {
-            //GetComponent<Renderer>().material.color = new Color(0, 0, 0);
         }
     }
 
@@ -188,7 +176,7 @@ public class Person_withoutTransf
             else
             {
                 isbroken = true;
-                CityData.brokenNum++;
+                //CityData.brokenNum++;
             }
         }
     }
@@ -201,39 +189,17 @@ public class Person_withoutTransf
     }
 
     bool getinf(Person_withoutTransf person,List<Person_withoutTransf>City)
-    //void getperson()
     {
-        //GameObject[] obj = FindObjectOfType(typeof( GameObject)) as GameObject[];
-        /*
-        List<GameObject> ob = new GameObject();
-        foreach(GameObject i in GameObject.Find("Person"))
-        {
-
-        }
-        */
-        //GameObject.Find("Person");
-        //GameObject[] all = { };
-        //var all = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
-        //all.Initialize();
         var p = person;//.GetComponent<Person>();
         foreach (var item in City)
         {
-            //item.name.Contains("Cube (")&&
             if (item != person)
             {
-                var i = item;//.GetComponent<Person>();
+                var i = item;
                 if (p.dead == false && i.dead == false)
                 {
-                    /*
-                    var v = person.transform.position;
-                    var vv = item.transform.position;
-                    var des = vv - v;
-                    */
-                    //person.transform.position- item.transform.position
                     if ((person.position - item.position).sqrMagnitude < infectdes * SystemCoefficients.K_infectdes)
                     {
-                        //Debug.Log("des:" + magnitude(des));
-                        //Debug.Log(person.name + " : " + item.name);
                         if (p.infected == true || i.infected == true)
                         {
                             return true;
@@ -249,19 +215,7 @@ public class Person_withoutTransf
 
     public float magnitude(Vector3 v)
     {
-
-        //���������ƽ������.
-        /*
-        float X = v.x * v.x;
-        float Y = v.y * v.y;
-        float Z = v.z * v.z;
-        */
-        //return v.x;
-        //return v.x + v.y + v.z;
         return v.sqrMagnitude;
-        //return Mathf.Sqrt(X + Y + Z);//������,���շ��������ĳ���/ģ/��С.
-
-
     }
 
     void randset()
