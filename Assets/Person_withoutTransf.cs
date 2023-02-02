@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Person_withoutTransf
+public class Citizen
 {
     public Vector3 position;
     public bool dead = false;//是否死亡
@@ -20,14 +20,14 @@ public class Person_withoutTransf
 
     public string job = "";
 
-    public void Start2(List<Person_withoutTransf> City)
+    public void Start2(City city)
     {
-        City.Add(this);
+        city.citizens.Add(this);
         randset();
         randcread();
     }
 
-    public void FixedUpdate2(List<Person_withoutTransf> City)
+    public void FixedUpdate2(City city)
     {
         if (!dead)
         {
@@ -51,7 +51,6 @@ public class Person_withoutTransf
             if (isbrokentime > 1000)
             {
                 dead = true;
-                CityData.deadNum++;
             }
 
 
@@ -63,10 +62,9 @@ public class Person_withoutTransf
 
             if (!isolated)
             {
-                if (getinf(this,City))
+                if (getinf(this,city.citizens))
                 {
                     infected = true;
-                    CityData.infledNum++;
                     isolate();
                 }
             }
@@ -75,20 +73,19 @@ public class Person_withoutTransf
             {
                 makemoney();
             }
-            costmoney();
-            randdead(this,City);
+            costmoney(city.goods[0]);
+            randdead(this,city.citizens);
         }
     }
 
-    void randdead(Person_withoutTransf P,List<Person_withoutTransf>City)
+    void randdead(Citizen P,List<Citizen> citizens)
     {
         if (infected)
         {
             if (UnityEngine.Random.Range(0, 10000) == 50)
             {
                 dead = true;
-                City.Remove(P);
-                CityData.deadNum++;
+                citizens.Remove(P);
             }
         }
     }
@@ -103,7 +100,7 @@ public class Person_withoutTransf
         make = UnityEngine.Random.Range(100, 10000);
     }
 
-    void pmove(Person_withoutTransf person)
+    void pmove(Citizen person)
     {
         switch (UnityEngine.Random.Range(0, 5))
         {
@@ -150,21 +147,18 @@ public class Person_withoutTransf
         money = money + make * SystemCoefficients.K_make;
     }
 
-    void costmoney()
+    void costmoney(Good food)
     {
         if (!isbroken)
         {
+            hungery--;
             if(hungery<100)
             {
-                if(CityData.goods[0].Number>0)
+                if(food.Number>0&&money>=food.Price)
                 {
-                    CityData.goods[0].Number--;
-                    money -= CityData.goods[0].Price;
+                    food.Number--;
+                    money -= food.Price;
                     hungery = 100;
-                }
-                else
-                {
-                    hungery++;
                 }
             }
 
@@ -188,10 +182,10 @@ public class Person_withoutTransf
         isolated = true;
     }
 
-    bool getinf(Person_withoutTransf person,List<Person_withoutTransf>City)
+    bool getinf(Citizen person,List<Citizen> citizens)
     {
         var p = person;//.GetComponent<Person>();
-        foreach (var item in City)
+        foreach (var item in citizens)
         {
             if (item != person)
             {

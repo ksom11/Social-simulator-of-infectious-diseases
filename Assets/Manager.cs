@@ -45,36 +45,38 @@ public class Manager : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            Person_withoutTransf person = new Person_withoutTransf();
-            person.Start2(cityA.persons);
+            Citizen person = new Citizen();
+            person.Start2(cityA);
         }
         for (int i = 0; i < 100; i++)
         {
-            Person_withoutTransf person = new Person_withoutTransf();
-            person.Start2(cityB.persons);
+            Citizen person = new Citizen();
+            person.Start2(cityB);
         }
-        Good Food = new Good(); Food.Number = 0;
+        Good Food = new Good(); Food.Number = 0;Food.Value = 100; Food.Price = 100;
         cityA.goods.Add(Food);
         cityB.goods.Add(Food);
     }
 
     private void FixedUpdate()
     {
-        for (int i = 0; i < cityA.persons.Count; i++)
+        for (int i = 0; i < cityA.citizens.Count; i++)
         {
-            cityA.persons[i].FixedUpdate2(cityA.persons);
+            cityA.citizens[i].FixedUpdate2(cityA);
         }
-        for (int i = 0; i < cityA.persons.Count; i++)
+        for (int i = 0; i < cityA.citizens.Count; i++)
         {
-            cityA.persons[i].FixedUpdate2(cityB.persons);
+            cityA.citizens[i].FixedUpdate2(cityB);
         }
         if (cityA.goods[0].Number == 0) cityA.goods[0].Price *= 1.1f;
         if (cityA.goods[0].Number > 100) cityA.goods[0].Price *= 0.9f;
-        cityA.goods[0].Number += 100;
+        cityA.goods[0].Number += 50;
 
         if (cityB.goods[0].Number == 0) cityB.goods[0].Price *= 1.1f;
         if (cityB.goods[0].Number > 100) cityB.goods[0].Price *= 0.9f;
-        cityB.goods[0].Number += 100;
+        cityB.goods[0].Number += 50;
+
+        Debug.Log(cityA.goods[0].Price);
     }
 
     // Update is called once per frame
@@ -88,21 +90,21 @@ public class Manager : MonoBehaviour
         before = now;
         now = 0;
         //City_1.concat
-        foreach (var a in cityA.persons)//模拟后期出现总和数值过大，计算TOTALMONEY失效
+        foreach (var a in cityA.citizens)//模拟后期出现总和数值过大，计算TOTALMONEY失效
         {
             now = now + a.money;
         }
-        foreach (var a in cityB.persons)
+        foreach (var a in cityB.citizens)
         {
             now = now + a.money;
         }
-        CityData.TotalMoney = now - before;
+        //CityData.TotalMoney = now - before;
 
-        infnum.text = CityData.infledNum.ToString();
-        bronum.text = CityData.brokenNum.ToString();
-        dednum.text = CityData.deadNum.ToString();
-        if(CityData.TotalMoney!=0)
-        moneynum.text = CityData.TotalMoney.ToString();
+        infnum.text = (cityA.infledNum+ cityB.infledNum).ToString();
+        bronum.text = (cityA.brokenNum + cityB.brokenNum).ToString();
+        dednum.text = (cityA.deadNum + cityB.deadNum).ToString();
+        if((cityA.money + cityB.money) != 0)
+        moneynum.text = (cityA.money + cityB.money).ToString();
     }
 
     float ValToK(float val)

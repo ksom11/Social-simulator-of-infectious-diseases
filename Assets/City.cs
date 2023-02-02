@@ -9,9 +9,9 @@ public class City
         get
         {
             int Sum = 0;
-            for (int i = 0; i < persons.Count; i++)
+            for (int i = 0; i < citizens.Count; i++)
             {
-                if (persons[i].infected) Sum++;
+                if (citizens[i].infected) Sum++;
             }
             return Sum;
         }
@@ -22,9 +22,9 @@ public class City
         get
         {
             int Sum = 0;
-            for (int i = 0; i < persons.Count; i++)
+            for (int i = 0; i < citizens.Count; i++)
             {
-                if (persons[i].isbroken) Sum++;
+                if (citizens[i].isbroken) Sum++;
             }
             return Sum;
         }
@@ -34,9 +34,9 @@ public class City
         get
         {
             int Sum = 0;
-            for (int i = 0; i < persons.Count; i++)
+            for (int i = 0; i < citizens.Count; i++)
             {
-                if (persons[i].dead) Sum++;
+                if (citizens[i].dead) Sum++;
             }
             return Sum;
         }
@@ -46,13 +46,13 @@ public class City
         get
         {
             float Sum = 0;
-            for(int i=0;i<persons.Count;i++)
+            for(int i=0;i< citizens.Count;i++)
             {
-                Sum += persons[i].money;
+                Sum += citizens[i].money;
             }
             return Sum;
         }
     }
-    public List<Person_withoutTransf> persons = new List<Person_withoutTransf>();
+    public List<Citizen> citizens = new List<Citizen>();
     public List<Good> goods = new List<Good>();
 }
